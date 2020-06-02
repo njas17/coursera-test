@@ -58,8 +58,8 @@ section {
 	}
 
 }
+/*
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-
 	#s1, #s2 {
 		width: 48%;
 		float:left;
@@ -68,7 +68,7 @@ section {
 		clear: left; 
 		width: 98%;
 	}
-}
+}*/
 @media only screen and (max-width: 767px) {
 	section {
 		width: 98%;
