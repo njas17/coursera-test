@@ -1,1 +1,81 @@
-styles.css
+/* base styles */
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;					
+}
+body {
+	font-family: sans-serif, verdana;
+	padding: 0;
+	margin: 0;				
+}
+p{
+	padding: 40px 15px 10px;
+}
+h1 {
+	text-align: center;
+	font-size: 175%;
+	margin: 40px;
+}
+section {
+	border: 2px black solid;
+	padding: 0 5px;
+	background-color: gray;
+	position: relative;	
+	margin-bottom: 10px;	
+	margin-right: 1%;
+	margin-left: 1%;							
+
+}
+.title {
+	font-size: 125%;				
+	position: absolute;
+	top: -1px;
+	right: -1px;
+	border: 2px black solid;
+	padding: 0px 15px;
+	text-align: center;
+}		
+
+#s1 .title {
+	background-color: #d1909c;
+}
+#s2 .title {
+	background-color: #cc465f;
+}
+#s3 .title {
+	background-color: #dfdbab;
+}
+
+/*  Media styles. */
+
+
+@media only screen and (min-width: 992px ) {
+	section { 
+		width: 31%; 
+		float: left;
+		padding: 0 5px;
+	}
+
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+	#s1, #s2 {
+		width: 48%;
+		float:left;
+	}
+	#s3 { 
+		clear: left; 
+		width: 98%;
+	}
+}
+@media only screen and (max-width: 767px) {
+	section {
+		width: 98%;
+
+	}
+	.title {
+		font-size: 125%;
+	}
+}			
+
